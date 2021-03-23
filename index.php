@@ -3,6 +3,11 @@ session_start();
 require('./dbconnect.php');
 require('./function.php');
 
+//セッションにuseridが保存されている時は、自動でログイン
+if(isset($_SESSION["user_id"])){
+  header("Location:./talkcontents/index.php");
+  exit();
+}
 //オートログイン情報がクッキーに保存されている時データベースと比較
 if(isset($_COOKIE["auto_login"])){
   $auto_login=$db->prepare("SELECT * FROM auto_login WHERE auto_login_key=?");
