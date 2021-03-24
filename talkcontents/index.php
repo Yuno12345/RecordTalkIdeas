@@ -41,7 +41,7 @@ $categories=$db->query('SELECT * FROM categories');
         <p class="title">ジャンル一覧</p>
         <?php foreach($categories as $category):?>
           <div class="content">
-            <a href="list.php?category=<?php echo $category["category_name"]?>"><?php echo $category["category_name"]?></a>
+            <a href="list.php?category=<?php echo $category["category_id"]?>"><?php echo $category["category_name"]?></a>
           </div>
         <?php endforeach;?>
         </div>
