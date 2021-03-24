@@ -20,9 +20,9 @@ else{
   header("Location:./index.php");
 }
 
-$getname=$db->prepare('SELECT category_name FROM categories WHERE id=?');
+$getname=$db->prepare('SELECT * FROM categories WHERE id=?');
 $getname->execute(array($category_id));
-$category_name=$getname->fetch();
+$category_data=$getname->fetch();
 
 if(!empty($_POST["sort"])){
     h($sort=$_POST["sort"]);
@@ -108,7 +108,7 @@ $good_records=$getgood->fetchAll();
 
     <div class="title-wrapper">
         <a  href="index.php"><span class="fa fa-arrow-left"></span></a>
-        <h2 class="title"><?php echo $category_name?></h2>
+        <h2 class="title"><?php echo $category_data["category_name"]?></h2>
     </div>
 
     <div class="sort-wrapper"> 
