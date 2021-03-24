@@ -96,7 +96,13 @@ if($state==="edit"){
   <body>
      <div class="create-wrapper">
        <div class="create-form">
-         <p class="main-title">新規作成</p>
+         <p class="main-title">
+            <?php if($state==="new"):?>
+                <?php echo "新規作成"?>
+            <?php elseif($state==="edit"):?>
+                <?php echo "編集"?>
+            <?php endif?>
+        </p>
          <p class="title-text">タイトル</p>
          <form action="./create.php?category=<?=$category_id?>&id=<?=$idea_id?>&state=<?=$state?>" method="post">
             <input type="text" class="title-form" name="title" size="20" maxlength="10" value="<?=$idea["title"]?>">
