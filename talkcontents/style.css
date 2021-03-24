@@ -118,3 +118,9 @@ header{
 background-color:#FFBBFF;
 }
 
+@media screen and (max-width: 800px){
+  .logo{
+    width:210px;
+    height:50px;
+  }
+}

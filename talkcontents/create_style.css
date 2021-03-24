@@ -69,3 +69,10 @@ header{
       color:red;
       font-size:15px;
   }
+
+  @media screen and (max-width: 800px){
+    .logo{
+      width:210px;
+      height:50px;
+    }
+  }
