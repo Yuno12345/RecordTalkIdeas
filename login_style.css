@@ -129,7 +129,7 @@ dl, dd {
 
   @media screen and(max-width: 480px){
     .logo{
-      width:40%;
-      height:40%;
+      width:200px;
+      height:30px;
     }
   }
