@@ -20,7 +20,7 @@ else{
   header("Location:./index.php");
 }
 
-$getname=$db->prepare('SELECT category_name FROM categories WHERE category_id=?');
+$getname=$db->prepare('SELECT category_name FROM categories WHERE id=?');
 $getname->execute(array($category_id));
 $category_name=$getname->fetch();
 
