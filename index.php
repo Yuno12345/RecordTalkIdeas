@@ -97,7 +97,7 @@ if($_POST){
           <a href="./join/index.php">新規登録</a>
         </div>
         <div class="header-logo">
-          <a href="./talkcontents/index.php"><img class="logo" src="./RTI-rogo.png" width="400px" height="60px"/></a>
+          <a href="./talkcontents/index.php"><img src="./RTI-rogo.png" width="400px" height="60px"/></a>
         </div>
       </div>
 </header>
