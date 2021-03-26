@@ -1,4 +1,4 @@
 # RecordTalkIdeas
 
-RecordTalkIdeasは、こちらから閲覧できます。
+RecordTalkIdeasはこちらから閲覧できます。
 https://recordideas.herokuapp.com/
