@@ -3,6 +3,7 @@
 ### 〇概要
 RecordTalkIdeasはこちらから閲覧できます。  
 https://recordideas.herokuapp.com/  
+
 ※テストアカウント  
 メールアドレス：aaa@gmail.com  
 パスワード：aaaaa
